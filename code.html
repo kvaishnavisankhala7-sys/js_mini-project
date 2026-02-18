@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Today</h2>
+        <button onclick="showTotal()">Total Spending</button>
+        <p id="totalDisplay">₹0</p>
+    </div>
+
+    <!-- Main Card -->
+    <div class="card">
+        <h1>Expense Tracker</h1>
+
+        <div class="inputs">
+            <input type="text" id="name" placeholder="Expense name">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <ul id="expenseList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
